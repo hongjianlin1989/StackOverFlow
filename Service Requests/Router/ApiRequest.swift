@@ -25,7 +25,6 @@ struct ApiRequest: URLRequestConvertible {
                     do {
                         urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
                     } catch {
-                        // TODO: add descriptive login error
                         throw error
                     }
                 case .get:
