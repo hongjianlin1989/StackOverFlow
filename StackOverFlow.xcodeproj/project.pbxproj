@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2701F010235C9DD700EF5D42 /* ApiPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2701F00F235C9DD700EF5D42 /* ApiPath.swift */; };
 		27559E36235A61BF009487FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27559E35235A61BF009487FF /* AppDelegate.swift */; };
 		27559E38235A61BF009487FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27559E37235A61BF009487FF /* SceneDelegate.swift */; };
 		27559E3A235A61BF009487FF /* UserFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27559E39235A61BF009487FF /* UserFeedViewController.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		247CB732DB2E59F254E71AA0 /* Pods_app_StackOverFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_StackOverFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2701F00F235C9DD700EF5D42 /* ApiPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPath.swift; sourceTree = "<group>"; };
 		27559E32235A61BF009487FF /* StackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27559E35235A61BF009487FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27559E37235A61BF009487FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				27559E6C235A655B009487FF /* ApiRequest.swift */,
 				27559E6E235A658A009487FF /* RequestError.swift */,
 				27559E70235A65BD009487FF /* NetworkDispatcher.swift */,
+				2701F00F235C9DD700EF5D42 /* ApiPath.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				27F4AFE4235BAD9100B14123 /* UserFeedCell.swift in Sources */,
 				27559E6F235A658A009487FF /* RequestError.swift in Sources */,
 				27F4AFE7235BB1A200B14123 /* UserFeedCellViewModel.swift in Sources */,
+				2701F010235C9DD700EF5D42 /* ApiPath.swift in Sources */,
 				27559E3A235A61BF009487FF /* UserFeedViewController.swift in Sources */,
 				27559E69235A62AB009487FF /* ApiRouter.swift in Sources */,
 				27559E6B235A6528009487FF /* RequestData.swift in Sources */,

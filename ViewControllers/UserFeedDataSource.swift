@@ -7,7 +7,7 @@ class UserFeedDataSource: NSObject {
     
     func loadData(completion: @escaping ((_ success: Bool, _ error: RequestError?) -> Void)) {
         
-        let endPoint = kHomePageURLString + "users?site=stackoverflow"
+        let endPoint = kHomePageURLString + ApiPath.userItems("stackoverflow").path()
     
         CreateStackOverFlowUserRouter(endpoint: endPoint).execute()
            .done {
