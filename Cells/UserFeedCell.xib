@@ -80,9 +80,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="ImageIcon" destination="UL5-AD-sVP" id="q2e-cR-YBL"/>
                 <outlet property="bronzeLabel" destination="SwJ-ym-ekb" id="KiP-zK-6LL"/>
                 <outlet property="goldLabel" destination="kWK-hb-swl" id="L22-gc-qqG"/>
+                <outlet property="imageIcon" destination="UL5-AD-sVP" id="q2e-cR-YBL"/>
                 <outlet property="nameLabel" destination="VX7-QA-ggT" id="C1s-LM-ffa"/>
                 <outlet property="silverLabel" destination="Nrt-3r-ARw" id="6qO-HF-Vw9"/>
             </connections>

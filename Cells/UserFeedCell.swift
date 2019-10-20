@@ -10,7 +10,7 @@ import UIKit
 
 class UserFeedCell: UITableViewCell {
 
-    @IBOutlet var ImageIcon: UIImageView!
+    @IBOutlet var imageIcon: UIImageView!
     
     @IBOutlet var nameLabel: UILabel!
     
@@ -21,6 +21,7 @@ class UserFeedCell: UITableViewCell {
     @IBOutlet var bronzeLabel: UILabel!
     
     static let identifier = "UserFeedCell"
+    let activityView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     
     var viewModel: UserFeedCellViewModel! {
         didSet {
@@ -28,12 +29,21 @@ class UserFeedCell: UITableViewCell {
             goldLabel.text = viewModel.glodString
             silverLabel.text = viewModel.silverString
             bronzeLabel.text = viewModel.bronzeString
-            ImageIcon.imageFromUrl(urlString: viewModel.imageUrlString)
+            activityView.startAnimating()
+            imageIcon.imageFromUrl(urlString: viewModel.imageUrlString, completion:{ (success) in
+                DispatchQueue.main.async {
+                    self.activityView.stopAnimating()
+                    }
+              
+            })
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        activityView.center = self.imageIcon.center
+        activityView.color = UIColor.white
+        self.imageIcon.addSubview(activityView)
         // Initialization code
     }
     
